@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiCalendar, FiClock, FiUser, FiPhone, FiMail, FiCheck, FiX } from 'react-icons/fi';
+import { FiCalendar, FiClock, FiUser, FiPhone, FiMail, FiCheck } from 'react-icons/fi';
 import { servicesData } from '../../data/servicesData';
 import { TIME_SLOTS, SPA_INFO } from '../../utils/constants';
 import { getTodayDate, validateEmail, validatePhone } from '../../utils/helpers';
@@ -85,13 +85,13 @@ const SuccessModal = ({ onClose, bookingData }) => (
   </AnimatePresence>
 );
 
-const BookingForm = () => {
+const BookingForm = ({ initialService = '' }) => {
   const today = getTodayDate();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
-    service: '',
+    service: initialService || '',
     date: today,
     time: '',
     message: '',

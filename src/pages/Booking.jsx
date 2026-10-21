@@ -67,7 +67,7 @@ const Booking = () => {
                   <h2 className="text-2xl font-serif font-bold text-white mb-2">Complete Your Booking</h2>
                   <p className="text-nude-300 text-sm">Fill in the form below and we'll confirm your appointment within 30 minutes.</p>
                 </div>
-                <BookingForm />
+                <BookingForm initialService={preSelectedService} />
               </motion.div>
             </div>
 

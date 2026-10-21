@@ -1,0 +1,8 @@
+{
+  "name": "Dev Unisex Spa",
+  "description": "Premium massage and wellness spa in Sector 1 Greater Noida. Luxury facial treatments, body massage, aromatherapy, hair spa, nail care and more.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

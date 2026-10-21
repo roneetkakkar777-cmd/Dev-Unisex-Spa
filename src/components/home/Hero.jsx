@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiPlay, FiStar, FiClock, FiMapPin } from 'react-icons/fi';
+import { FiArrowRight, FiStar, FiClock, FiMapPin } from 'react-icons/fi';
 import { SPA_INFO } from '../../utils/constants';
 
 const Hero = () => {
